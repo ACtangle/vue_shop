@@ -1,28 +1,25 @@
 # vue_shop
-<<<<<<< HEAD
 
-## Project setup
-```
-npm install
-```
+#### 一个使用vue的前端电商管理系统项目
+* vue
+* elementUI
+* Typescript  (迭代更新)  
+* Echarts
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#### 后端数据来自于另外一个项目：vue-api-server
+* NodeJS
+* Mysql
+* Express
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### 功能
+* 登录
+* 用户管理
+* 权限管理
+* 角色管理
+* 商品分类管理
+* 分类参数管理
+* 商品管理
+* 图片上传
+* 订单管理
+* 数据统计
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-a shop by vue then iteration
->>>>>>> bd74ff7954de461234d061d31f616027141f082f
