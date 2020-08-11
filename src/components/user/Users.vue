@@ -96,7 +96,7 @@
     <el-dialog
       title="添加用户"
       :visible.sync="addDialogVisible"
-      width="50%"
+      width="40%"
       @close="addDialogClosed"
     >
       <el-form
@@ -104,11 +104,15 @@
         :rules="addFormRules"
         ref="addFormRef"
         label-width="70px"
+        status-icon
       >
         <el-form-item label="用户名" prop="username">
           <el-input v-model="addForm.username"></el-input></el-form-item
         ><el-form-item label="密码" prop="password">
-          <el-input v-model="addForm.password"></el-input></el-form-item
+          <el-input
+            v-model="addForm.password"
+            type="password"
+          ></el-input></el-form-item
         ><el-form-item label="邮箱名" prop="email">
           <el-input v-model="addForm.email"></el-input></el-form-item
         ><el-form-item label="手机" prop="mobile">
@@ -125,7 +129,7 @@
     <el-dialog
       title="编辑用户信息"
       :visible.sync="editDialogVisible"
-      width="50%"
+      width="40%"
       @close="editDiaglogClosed"
     >
       <el-form
@@ -133,6 +137,7 @@
         :rules="editFormRules"
         ref="editFormRef"
         label-width="70px"
+        status-icon
       >
         <el-form-item label="用户名">
           <el-input v-model="editForm.username" disabled></el-input>
