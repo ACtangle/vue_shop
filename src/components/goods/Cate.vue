@@ -74,7 +74,7 @@
         @current-change="handleCurrentChange"
         :current-page="queryInfo.pageNum"
         :page-sizes="[3, 5, 10, 15]"
-        :page-size="queryInfo.pageSize"
+        :page-size="queryInfo.pagesize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="total"
       >
@@ -299,7 +299,6 @@ export default {
       this.editDialogVisible = true
       this.editForm.cat_name = row.cat_name
       this.editForm.cat_id = row.cat_id
-      console.log(row)
     },
     // 编辑对话框点击确定按钮
     editDialog() {
