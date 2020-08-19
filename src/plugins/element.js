@@ -29,6 +29,9 @@ import {
   Select,
   Option,
   Cascader,
+  Alert,
+  Tabs,
+  TabPane,
 } from 'element-ui'
 
 //按需导入
@@ -59,6 +62,9 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 // 弹框
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
